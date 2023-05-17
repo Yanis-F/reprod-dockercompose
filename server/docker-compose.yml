@@ -1,0 +1,12 @@
+version: '3'
+services:
+  my_server:
+    build: .
+    networks:
+      - my_network
+    ports:
+      - "3000:3000"
+
+networks:
+  my_network:
+    external: true
